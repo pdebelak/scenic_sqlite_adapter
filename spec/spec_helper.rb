@@ -1,8 +1,8 @@
 ENV["RAILS_ENV"] = "test"
 require "database_cleaner"
 require "bundler/setup"
-require "scenic"
 require "scenic_sqlite_adapter"
+require "scenic"
 
 ActiveRecord::Base.establish_connection(
   adapter: "sqlite3",

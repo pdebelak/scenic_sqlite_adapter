@@ -8,7 +8,7 @@ Add these lines to your application's Gemfile:
 
 ```ruby
 gem 'scenic'
-gem 'scenic_sqlite_adapter'
+gem 'scenic_sqlite_adapter', git: 'git://github.com/pdebelak/scenic_sqlite_adapter.git'
 ```
 
 And then execute:

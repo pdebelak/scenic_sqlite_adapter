@@ -115,6 +115,12 @@ RSpec.describe Scenic::Adapters::Sqlite do
         "people",
         "people_with_names",
       ]
+      expect(adapter.views.map(&:materialized)).to eq [
+        false,
+        false,
+        false,
+        false,
+      ]
     end
   end
 end
