@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'scenic_sqlite_adapter'
+require_relative 'lib/scenic_sqlite_adapter'
 
 Gem::Specification.new do |spec|
   spec.name          = "scenic_sqlite_adapter"
@@ -36,6 +36,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "sqlite3"
   spec.add_development_dependency "scenic"
 
-  spec.add_dependency "activerecord"
-  spec.add_dependency "activesupport"
+  spec.add_dependency "activerecord", ">= 4.0.0"
 end

@@ -1,5 +1,4 @@
 require "active_record"
-require "active_support"
 require "scenic/adapters/sqlite"
 
 module ScenicSqliteAdapter

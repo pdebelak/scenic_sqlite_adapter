@@ -8,6 +8,7 @@ module Scenic
           super "Sqlite3 does not support this feature"
         end
       end
+
       def initialize(connectable = ActiveRecord::Base)
         @connectable = connectable
       end
