@@ -1,14 +1,13 @@
 # ScenicSqliteAdapter
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/scenic_sqlite_adapter`. To experiment with that code, run `bin/console` for an interactive prompt.
+Sqlite adapter for [scenic](https://github.com/thoughtbot/scenic).
 
-TODO: Delete this and the text above, and describe your gem
+## Usage
 
-## Installation
-
-Add this line to your application's Gemfile:
+Add these lines to your application's Gemfile:
 
 ```ruby
+gem 'scenic'
 gem 'scenic_sqlite_adapter'
 ```
 
@@ -16,13 +15,15 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Then create the following file:
 
-    $ gem install scenic_sqlite_adapter
+```ruby
+# config/initializers/scenic.rb
 
-## Usage
-
-TODO: Write usage instructions here
+Scenic.configure do |config|
+  config.database = Scenic::Adapters::Sqlite.new
+end
+```
 
 ## Development
 
@@ -32,10 +33,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/scenic_sqlite_adapter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/pdebelak/scenic_sqlite_adapter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
