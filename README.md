@@ -25,6 +25,13 @@ Scenic.configure do |config|
 end
 ```
 
+## Limitations
+
+Sqlite does not support all the features from the scenic gem. For instance, it
+does not support materialized views or the `CREATE OR REPLACE` statement. Trying
+to use those features will raise a
+`Scenic::Adapters::Sqlite::FeatureNotSupportedError`.
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
