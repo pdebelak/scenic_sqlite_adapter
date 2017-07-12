@@ -7,7 +7,6 @@ Sqlite adapter for [scenic](https://github.com/thoughtbot/scenic).
 Add these lines to your application's Gemfile:
 
 ```ruby
-gem 'scenic'
 gem 'scenic_sqlite_adapter'
 ```
 
